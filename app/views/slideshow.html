@@ -1,0 +1,19 @@
+<div class="slider">
+    <p>This is the slideShow view.</p>
+    <div class="slide" ng-repeat="image in images" ng-show="image.visible">
+        <!--<img ng-src="img/{{image.src}}" />-->
+        <p> {{image.src}}</p>
+    </div>
+    <div class="arrows">
+        <div ng-click="prev()">
+            { - }
+            <!--<img src="img/left-arrow.png" />-->
+        </div>
+        <div ng-click="next()">
+            { + }
+            <!--<img src="img/right-arrow.png" />-->
+        </div>
+    </div>
+    <!--https://www.sitepoint.com/creating-slide-show-plugin-angularjs/-->
+
+</div>

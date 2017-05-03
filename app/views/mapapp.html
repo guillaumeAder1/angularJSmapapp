@@ -1,0 +1,14 @@
+<div class="row highDiv">
+    <div class="col-sm-10">
+        <div id="map"></div>
+
+    </div>
+
+    <div class="col-sm-2 cityList">
+        <span>search by name:</span>
+        <input type="text" ng-model="test">
+        <div ng-repeat="city in cities | filter:test">
+            <span ng-click='detail(this)'>{{city.name}}</span>
+        </div>
+    </div>
+</div>
