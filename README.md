@@ -8,6 +8,8 @@ run  'git clone'
 
 run 'npm install'
 
+run 'bower install'
+
 ## Build & development
 
 Run `grunt` for building and `grunt serve` for preview.
